@@ -21,8 +21,8 @@
             <li><a href="#">JS</a></li>
         </ul>
     </div>
-    <div class="dropdown">
-        <button type="button" class="btn btn-info dropdown-toggle" id="btn2" data-toggle="droopdown">dropdown<a class="caret"></a></button>
+    <div class="dropdown" id="dropdown1">
+        <button type="button" class="btn btn-info dropdown-toggle" id="btn2" data-toggle="dropdown">dropdown<a class="caret"></a></button>
         <ul class="dropdown-menu" id="menu-id">
             <li class="dropdown-header"><a href="#">dropdown header</a></li>
             <li><a href="#">html</a></li>
@@ -34,12 +34,13 @@
     <div class="dropup">
             <button type="button" class="btn btn-inverse dropdown-toggle" id="btn3" data-toggle="droopdown">dropdown<a class="caret"></a></button>
             <ul class="dropdown-menu" id="menu-id2">
-                <li class="dropdown-header"><a href="#">front-end</a></li>
+                <li><a href="#">front-end</a></li>
                 <li><a href="#">html</a></li>
                 <li><a href="#">bootstrap</a></li>
                 <li><a href="#">js</a></li>
-                <li class="divider"><a href="#">back-end</a></li>
-                <li><a href="#"></a>database</li>
+                <li class="divider"><a href="#">sub</a></li>
+                <li><a href="#">back-end</a></li>
+                <li><a href="#">database</a></li>
                 <li><a href="#">node-js</a></li>
             </ul>
     </div>
@@ -48,7 +49,7 @@
     </body>
     <script>
         $(document).ready(function(){
-            $(".dropdown-toggle").dropdown()
+            $(".dropdown-toggle").dropdown();
         });
     </script>
 </html>
