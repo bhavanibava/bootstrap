@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap-responsive.min.css">
+        <script src="../../bootstrap/js/jquery.min.js"></script>
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container hero-unit">
+        <div class="alert alert-success alert-dismissable fade in">
+        <a id="btn1" class="close" data-toggle="alert">&times;</a>
+        </div>
+        <div class="alert alert-success aleert-dismissable fade in">
+        <a id="btn2" class="close" data-toggle="alert" data-dismiss="alert">&times;</a>
+        </div>
+        <p>alert box closed by using js code.<br>This code is very useful to avoid multiple alert box in screen</p>
+        </div>
+        <div class="row-fluid span3">
+            <button type="button" class="btn" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+            <button type="button" class="btn" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+        </div>
+    </body>
+    <script>
+    $("#btn1").alert('close');
+    </script>
+</html>

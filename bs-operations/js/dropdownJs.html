@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="../../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <script src="../../bootstrap/js/jquery.min.js"></script>
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                padding-top: 100px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container-fluid">
+    <div class="dropdown">
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">list<a class="caret"></a></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JS</a></li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <button type="button" class="btn btn-info dropdown-toggle" id="btn2" data-toggle="droopdown">dropdown<a class="caret"></a></button>
+        <ul class="dropdown-menu" id="menu-id">
+            <li class="dropdown-header"><a href="#">dropdown header</a></li>
+            <li><a href="#">html</a></li>
+            <li><a href="#">bootstrap</a></li>
+            <li><a href="#">js</a></li>
+        </ul>
+    </div>
+    <div class="hero-unit span3">
+    <div class="dropup">
+            <button type="button" class="btn btn-inverse dropdown-toggle" id="btn3" data-toggle="droopdown">dropdown<a class="caret"></a></button>
+            <ul class="dropdown-menu" id="menu-id2">
+                <li class="dropdown-header"><a href="#">front-end</a></li>
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">js</a></li>
+                <li class="divider"><a href="#">back-end</a></li>
+                <li><a href="#"></a>database</li>
+                <li><a href="#">node-js</a></li>
+            </ul>
+    </div>
+    </div>
+    </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $(".dropdown-toggle").dropdown()
+        });
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap-responsive.min.css">
+        <script src="../../bootstrap/js/jquery.min.js"></script>
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container hero-unit">
+        <div class="row-fluid">
+            <input type="text" class="text" data-provide="typeahead" placeholder="slidetoggle box">
+            <input type="text" class="text-right" id="txt1" placeholder="toggle box">
+            <button id="btn1" type="button" class="btn btn-default">submit</button>
+        </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".text").slideToggle('20s');
+                $(".text-right").toggle();
+                $("#txt1").getactive();
+            });
+        });
+    </script>
+</html>
